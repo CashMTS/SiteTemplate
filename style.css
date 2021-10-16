@@ -27,6 +27,10 @@ body{
     padding-right: 40px;
 }
 
+.title{
+    font-size: 15pt;
+}
+
 .div1{
     display: flex;
     justify-content: center;
