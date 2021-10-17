@@ -16,6 +16,7 @@
 
 body{
     background-color: rgb(255, 255, 255);
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -25,13 +26,16 @@ body{
     font-family: Helvetica, sans-serif;
     background: rgb(162,217,189);
     background: linear-gradient(315deg, rgba(162,217,189,1) 0%, rgba(185,208,178,1) 62%, rgba(217,195,162,1) 100%);    
-    background-position: center;
-    background-repeat: no-repeat;
+
     background-size:cover;
     --headerheigth: 100px;
 }
 
 .middle{
+    background-image: url(pictures/pexels-kelly-lacy-2453551.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -63,8 +67,9 @@ body{
     font-family: "Monserrat";
     position: fixed;
     width: 100%;
-    background-color: rgb(131, 161, 149);
+    background-color: rgb(21, 39, 32);
     box-shadow: 0px 10px 14px 5px rgba(0,0,0,0.1);
+    z-index: 1;
 }
 
 .header a{
