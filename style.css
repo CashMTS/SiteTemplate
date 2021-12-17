@@ -52,7 +52,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    padding-top: var(--headerheigth);
+
     position: relative;
 }
 
@@ -71,8 +71,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     border-radius: 100%;
     background-color: #2E8C5F;
     color: red;
@@ -96,9 +96,8 @@ body{
     align-items: center;
     height: 50px;
     font-size: 15pt;
-    animation-duration: 3s;
-    animation-name: float;
-    animation-iteration-count: infinite;
+    font-family: typograph-light;
+    letter-spacing: 1.5px;
 }
 
 .header{
@@ -109,9 +108,15 @@ body{
     font-family: "typograph-light";
     position: fixed;
     width: 100%;
-    background-color: rgb(21, 39, 32);
-    box-shadow: 0px 10px 14px 5px rgba(0,0,0,0.1);
+    background-color: #11221b;
+    transition-property: background-color, color;
+    transition-duration: 0.7s;
     z-index: 1;
+}
+
+.transparent{
+    color: white;
+    background-color: transparent;
 }
 
 .links{
@@ -131,6 +136,7 @@ body{
     justify-content: space-between;
     list-style-type: none;
     width: 100%;
+    font-size: 18px;
 }
 
 .header a{
@@ -173,11 +179,12 @@ body{
     padding-bottom: 90px;
     padding-left: 80px;
     padding-right: 80px;
-    font-family: montserrat;
+    font-family: typograph-light;
 }
 
 #book h1{
     font-size: 30px;
+    font-weight: bold;
 }
 
 #book p{
@@ -223,6 +230,10 @@ body{
     background-color: red;
     margin-bottom: 10px;
     margin-right: 10px;
+}
+
+.creation_container img{
+
 }
 
 .creation_container:nth-child(3n){
@@ -277,10 +288,7 @@ body{
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
-    background-image: url(/pictures/pexels-ekaterina-belinskaya-4671835.png);
-    background-size: cover;
-    background-position-y: -60px;
-    background-position-x: right;
+    background-image: url(/pictures/Rectangle\ 6.jpg);
     font-family: typograph-light;
 }
 
@@ -341,7 +349,7 @@ button{
     width: 100px;
     height: 40px;
     font-family: typograph-light;
-    font-size: 18px;
+    font-size: 14pt;
     margin-top: 50px;
     color: white;
 }
@@ -372,9 +380,13 @@ footer{
     height: 50px;
     background-color: transparent;
     border-color: white;
-    border-width: 2px;
+    border-width: 1px;
     border-style: solid;
     border-radius: 100%;
+}
+
+.logo_circle:hover{
+    cursor: pointer;
 }
 
 .line{
@@ -418,8 +430,8 @@ footer{
     }
 
     .logos>div{
-        margin-right: 10px;
-        margin-left: 10px;
+        margin-right: 20px;
+        margin-left: 20px;
     }
 
     .page_article{
@@ -439,10 +451,27 @@ footer{
         font-size: 40px;
     }
 
+    .subtitle{
+        font-size: 12pt;
+    }
+
     .links{
         min-width: 250px;
     }
 
+    .button{
+        height: 50px;
+        width: 50px;
+    }
+
+
+}
+
+@media screen and (max-width:680px){
+
+    #book p {
+        font-size: 18px;
+    }
 
 }
 
@@ -476,6 +505,42 @@ footer{
 
 @media screen and (max-width:520px){
 
+    .creation_container{
+        margin-left: 0;
+        margin-right: 0;
+        height: 220;
+        width: auto;
+    }
+
+    .logo_circle{
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo_circle img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .creation_container img{
+        height: inherit;
+    }
+
+    .creation_container:nth-child(2n){
+        margin-right: 0;
+    }
+
+    .creation_container:nth-child(3n){
+        margin-right: 0;
+    }
+    /* .creation_container{
+        width: 430px;
+    }
+
+    .creation_container img{
+        width: inherit;
+    } */
+
     .input_container{
         width: 300px;
     }
@@ -483,6 +548,18 @@ footer{
     form input{
         font-size: 15px;
     }
+
+}
+
+@media screen and (max-width:425px){
+
+    .creation_container{
+        margin-left: 0;
+        margin-right: 0;
+        height: 180;
+        width: auto;
+    }
+
 
 }
 
