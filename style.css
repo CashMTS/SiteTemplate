@@ -13,6 +13,17 @@
     src: url("fonts/Stanley.ttf");
 }
 
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, p{
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    font-weight: inherit;
+}
 
 body{
     background-color: rgb(255, 255, 255);
@@ -40,8 +51,31 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 800px;
+    height: 100vh;
     padding-top: var(--headerheigth);
+    position: relative;
+}
+
+.main_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    background-color: white;
+    color: red;
 }
 
 .maintitle{
@@ -72,6 +106,25 @@ body{
     z-index: 1;
 }
 
+.links{
+    position: absolute;
+    display: flex;
+    min-width: 300px;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    height: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.links ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 100%;
+}
+
 .header a{
     text-decoration: none;
     color: white;
@@ -87,10 +140,8 @@ body{
 }
 
 .secondpage{
-    display: flex;
     min-height: 700px;
     background-color: rgb(51, 51, 51);
-    flex-direction: column;
 }
 
 .page_title{
@@ -102,6 +153,77 @@ body{
     padding-top: 50px;
 }
 
+.competences{
+    height:200px;
+    background-color: grey;
+}
+
+#book{
+
+    background-color: rgb(51, 51, 51);
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-family: montserrat;
+}
+
+#book h1{
+    font-size: 30px;
+}
+
+#book p{
+    font-size: 25px;
+    margin-top: 50px;
+    line-height: 50px;
+}
+
+.languages{
+    display: flex;
+    justify-content: center;
+    color: red;
+    margin-top: 30px;
+}
+
+.lang_container{
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    border-radius: 18px;
+}
+
+.lang_container div{
+    margin-right: 10px;
+}
+
+.lang_container div:nth-last-child(1){
+    margin-right: 0px;
+}
+
+#portfolio{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.creation_container{
+    height: 250px;
+    width: 480px;
+    background-color: red;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.creation_container:nth-child(3n){
+    margin-right: 0;
+}
+
+.creation_container:nth-child(2n-1){
+    background-color: rgb(180, 10, 10);
+}
 .page_article{
     display: flex;
     justify-content: center;
@@ -125,7 +247,6 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 300px;
     font-size: 15pt;
 }
 
@@ -137,6 +258,34 @@ body{
     margin-right: 0;
 }
 
+#contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#contact h1{
+    font-size: 40px;
+}
+
+.contact_container{
+    display: flex;
+    justify-content: center;
+}
+
+.contact_container form{
+    display: flex;
+    flex-direction: column;
+    margin:0;
+}
+
+form input{
+    background-color: inherit;
+    border:none;
+}
 footer{
     background-color: #424242;
     min-height: 50px;
