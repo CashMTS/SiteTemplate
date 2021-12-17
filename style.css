@@ -52,6 +52,10 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     position: relative;
 }
@@ -289,6 +293,10 @@ body{
     padding-top: 50px;
     padding-bottom: 50px;
     background-image: url(/pictures/Rectangle\ 6.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: typograph-light;
 }
 
