@@ -5,80 +5,241 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
     <title>Portfolio</title>
 </head>
 
 <body>
-    <div class="header">
+    <div class="header transparent{
+        color: white;
+        background-color: transparent;
+    }">
         <div class="div2">
-            <div>
-                <a href="#">home</a>
-            </div>
-            <div>
-                <a href="#book">book</a>
-            </div>
-            <div>
-                <a href="#compet">skills</a>
-            </div>
-            <div>
-                <a href="#contact">contact</a>
-            </div>
+            <img src="/logo/backup.svg" alt="" id="logo">
         </div>
+        <nav class="links">
+            <ul>
+                <li id="comp">skills</li>
+                <li id="port">portfolio</li>
+                <li id="cont">contact</li>
+            </ul>
+        </nav>
     </div>
     
-    <div class="middle">
+    <div class="middle" id="main">
         <div class="maintitle">MATHIS</div>
         <div class="subtitle">web developer & graphic designer</div>
-    </div>
-
-    <div class="secondpage" id="book">
-        <div class="page_title">à propos de moi</div>
-        <div class="page_article">
-            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam voluptatum, eveniet quam quaerat hic est at veniam, placeat iste aliquam, porro reiciendis unde soluta odit corporis nostrum! Distinctio, incidunt non!</div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi illo provident, unde asperiores fugit blanditiis quidem, impedit delectus fugiat omnis aspernatur repellendus, est exercitationem mollitia dolores perspiciatis modi. Ratione, id.</div>
-            <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro ratione impedit accusantium, labore architecto dicta natus. Laborum facilis quae, quibusdam a reiciendis soluta? Eos, aspernatur ratione maxime temporibus beatae quo?</div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, doloremque molestiae commodi in ea sequi vero officiis, magni accusamus culpa, maxime cupiditate delectus unde nobis. Eligendi quisquam ipsa sint laboriosam.</div>
+        <div class="main_button">
+            <div class="button">
+                <img src="/svg/arrow.svg" alt="">
+            </div>
         </div>
     </div>
 
-    <div class="secondpage" id="compet">
-        <div class="page_title">à propos de moi</div>
-        <div class="page_article">
-            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam voluptatum, eveniet quam quaerat hic est at veniam, placeat iste aliquam, porro reiciendis unde soluta odit corporis nostrum! Distinctio, incidunt non!</div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi illo provident, unde asperiores fugit blanditiis quidem, impedit delectus fugiat omnis aspernatur repellendus, est exercitationem mollitia dolores perspiciatis modi. Ratione, id.</div>
-            <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro ratione impedit accusantium, labore architecto dicta natus. Laborum facilis quae, quibusdam a reiciendis soluta? Eos, aspernatur ratione maxime temporibus beatae quo?</div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, doloremque molestiae commodi in ea sequi vero officiis, magni accusamus culpa, maxime cupiditate delectus unde nobis. Eligendi quisquam ipsa sint laboriosam.</div>
+    <div id="book">
+        <h1>
+            Bonjour, je suis Mathis Merckel !
+        </h1>
+        <p>
+            Développeur français venant de Toulouse, <br>
+            J'adore apprendre toute sorte de choses par moi-même, c'est pour cette raison que je suis passionné par la création 3D, 
+        </p> 
+        <div class="book_bonus_text">
+            l'apprentissage de langues étrangères ou encore la programmation. Je sais parler français, anglais, espagnol et japonais, travailler avec des personnes extérieures à la France est donc toujours un plaisir pour moi.
+        </div>
+        <div class="book_button">
+            More
         </div>
     </div>
 
-    <div class="secondpage" id="contact">
-        <div class="page_title">à propos de moi</div>
-        <div class="page_article">
-            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam voluptatum, eveniet quam quaerat hic est at veniam, placeat iste aliquam, porro reiciendis unde soluta odit corporis nostrum! Distinctio, incidunt non!</div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi illo provident, unde asperiores fugit blanditiis quidem, impedit delectus fugiat omnis aspernatur repellendus, est exercitationem mollitia dolores perspiciatis modi. Ratione, id.</div>
-            <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro ratione impedit accusantium, labore architecto dicta natus. Laborum facilis quae, quibusdam a reiciendis soluta? Eos, aspernatur ratione maxime temporibus beatae quo?</div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, doloremque molestiae commodi in ea sequi vero officiis, magni accusamus culpa, maxime cupiditate delectus unde nobis. Eligendi quisquam ipsa sint laboriosam.</div>
+    <div class="competences" id="competences">
+        <div class="competence_container">
+            <div class="competence_title">Mes expériences<br> professionnelles</div>
+            <div class="competence_content">
+                <div class="visible_text">
+                    Réalisation d’un site vitrine/blog pour une décoratrice d’intérieur, comprenant la conception de l’UX design et et le développement en Javascript,
+                </div>
+                <div class="bonus_text">
+                    HTML, CSS, NodeJS, MongoDB, etc...
+                    <span class="hidden"><br><br>Conception d'une affiche pour une association sportive<br><br>
+                        Création bénévole d'une affiche pour association luttant pour les droits des enfants<span>
+                </div>
+            </div>
+            <div class="competence_button">
+                Plus
+            </div>
+        </div>
+
+        <div class="competence_separator">
+            <div></div>
+        </div>
+        
+        <div class="competence_container">
+            <div class="competence_title">Mes compétences <br>en équipe</div>
+            <div class="competence_content">
+                <div class="visible_text">
+                    Ma maîtrise avancée de GitHub me permet de communiquer aisément avec des coéquipiers lors de travaux en équipe
+                    <br><br>Ma connaissance d'outils 
+                </div>
+                <div class="bonus_text">
+                    graphiques tels que figma ou la suite adobe me permet d'être à l'aise aussi bien du côté design que développement et de pouvoir communiquer avec des graphistes
+                </div>
+            </div>
+            <div class="competence_button">
+                Plus
+            </div>
+        </div>
+
+        <div class="competence_separator"><div></div></div>
+
+        <div class="competence_container">
+            <div class="competence_title">Mes compétences<br> techniques</div>
+            <div class="competence_content">
+                <div class="visible_text">
+                    Mes connaissances en Java (Maven, Junit), Python, Javascript (JQuery, ReactJS), HTML, CSS, PHP, NodeJS, MySQL ou encore MongoDB me permettent de mener à 
+                </div>
+                <div class="bonus_text" id="last_text">
+                    bien à la fois des projets classiques, pour le web, pour particulier ou professionnel
+                </div>
+            </div>
+            <div class="competence_button" id="last_but">
+                Plus
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="creation_container">
+            <div class="opac">
+            </div>
+            <div class="opac_text">
+                <div>Design publicitaire</div>
+                <div>2019</div>
+            </div>
+            <img src="/transfer-lq/azio.jpg" alt="">
+        </div>
+        <div class="creation_container">
+            <div class="opac">
+            </div>
+            <div class="opac_text">
+                <div>Design publicitaire</div>
+                <div>2019</div>
+            </div>
+            <img src="/transfer-lq/react.jpg" alt="">
+        </div>
+        <div class="creation_container">
+            <div class="opac">
+            </div>
+            <div class="opac_text">
+                <div>Modélisation 3D</div>
+                <div>2020</div>
+            </div>
+            <img src="/transfer-lq/sabre.jpg" alt="">
+        </div>
+        <div class="creation_container">
+            <div class="opac">
+            </div>
+            <div class="opac_text">
+                <div>Modélisation 3D</div>
+                <div>2020</div>
+            </div>
+            <img src="/transfer-lq/factory.jpg" alt="">
+        </div>
+        <div class="creation_container">
+            <div class="opac">
+            </div>
+            <div class="opac_text">
+                <div>Design de CD</div>
+                <div>2019</div>
+            </div>
+            <img src="/transfer-lq/carti.jpg" alt="">
+        </div>
+        <div class="creation_container">
+            <div class="opac">
+            </div>
+            <div class="opac_text">
+                <div>Projet personnel</div>
+                <div>2017</div>
+            </div>
+            <img src="/transfer-lq/palace.jpg" alt="">
+        </div>
+        <div class="creation_container">
+            <div class="opac">
+            </div>
+            <div class="opac_text">
+                <div>Modélisation 3D</div>
+                <div>2020</div>
+            </div>
+            <img src="/transfer-lq/multicolor.jpg" alt="">
+        </div>
+        <div class="creation_container">
+            <div class="opac">
+            </div>
+            <div class="opac_text">
+                <div>Modélisation 3D</div>
+                <div>2020</div>
+            </div>
+            <img src="/transfer-lq/lava.jpg" alt="">
+        </div>
+        <div class="creation_container">
+            <div class="opac">
+            </div>
+            <div class="opac_text">
+                <div>Identité visuelle</div>
+                <div>2019</div>
+            </div>
+            <img src="/transfer-lq/skea.jpg" alt="">
+        </div>
+        
+    </div>
+
+    <div id="contact">
+        <h2>Vous voulez me contacter ?</h2>
+        <h1>Complétez vos informations et envoyez moi un message !</h1>
+        <div class="contact_container">
+            <form>
+                <div class="input_container">
+                    <input type="text" name="" id="" placeholder="* votre adresse mail">
+                    <div class="line"></div>
+                </div>
+                <div class="input_container">
+                    <input type="text" name="" id="" placeholder="* décrivez votre projet rapidement">
+                    <div class="line"></div>
+                </div>
+                <div class="input_container">
+                    <input type="text" name="" id="" placeholder="* quel est votre budget ?">
+                    <div class="line"></div>
+                </div>
+                
+                
+                <button>envoyer</button>
+            </form>
         </div>
     </div>
 
     
 
     <footer>
-        <div>© Mathis MERCKEL 2021</div>
         <div class="logos">
             <div>
-                <a href="https://www.instagram.com"><img src="logo/instagram.svg" alt="" class="logo_pic"></a>
+                <div class="logo_circle">
+                    <span><img src="/logo/instagram 1.svg" alt=""></span>
+                </div>
             </div>
             <div>
-                <a href="https://www.instagram.com"><img src="logo/facebook.svg" alt="" class="logo_pic"></a>
+                <div class="logo_circle">
+                    <span><img src="/logo/facebook 1.svg" alt=""></span>
+                </div>
             </div>
             <div>
-                <a href="https://www.instagram.com"><img src="logo/twitter.svg" alt="" class="logo_pic"></a>
+                <div class="logo_circle">
+                    <span><img src="/logo/twitter 1.svg" alt=""></span>
+                </div>
             </div>
         </div>
         
     </footer>
-    
+    <script src="js.js"></script>
 </body>
 
 </html>
