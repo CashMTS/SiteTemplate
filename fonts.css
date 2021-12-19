@@ -7,3 +7,18 @@
     font-family: typograph-light;
     src: url(/fonts/TYPOGRAPH\ PRO\ Light.ttf);
 }
+
+@font-face {
+    font-family: montserrat-light;
+    src: url(/fonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: montserrat-regular;
+    src: url(/fonts/Montserrat-Regular.ttf);
+}

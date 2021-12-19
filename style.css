@@ -13,6 +13,14 @@
     src: url("fonts/Stanley.ttf");
 }
 
+#logo, #comp, #port, #cont:hover{
+    cursor: pointer;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
 ul{
     margin: 0;
     padding: 0;
@@ -43,7 +51,7 @@ body{
 }
 
 .middle{
-    background-image: url(pictures/pexels-kelly-lacy-2453551.png);
+    background-image: url(pictures/bg-lq.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -172,29 +180,119 @@ body{
 }
 
 .competences{
-    height:200px;
-    background-color: grey;
+    display: flex;
+    justify-content: center;
+    background-color: #171717;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 150px;
+    padding-right: 150px;
+    flex-wrap: wrap;
+}
+
+.competence_container{
+    min-width: 250px;
+    width: 250px;
+    font-family: montserrat-light;
+    line-height: 25px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.competence_container:nth-last-child(1){
+    margin-right: 0;
+}
+
+.competence_container:nth-child(1){
+    margin-left: 0;
+}
+
+.competence_content{
+    margin-bottom: 25px;
+}
+
+.competence_title{
+    font-size: 20pt;
+    margin-bottom: 25px;
+    line-height: 40px;
+    font-family: roboto;
+    text-indent: 0px;
+}
+
+.competence_separator{
+    display: flex;
+    align-items: center;
+}
+
+.competence_separator div{
+    background-color: white;
+    width: 1px;
+    height: 100px;
+}
+
+.competence_button{
+    text-indent: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #B64C4C;
+    width: 80px;
+    height: 40px;
+}
+
+.book_button:hover, .competence_button:hover{
+    cursor: pointer;
+}
+
+.bonus_text{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.show_text{
+    overflow: auto !important;
+    white-space: normal !important;
+    width: 100% !important;
 }
 
 #book{
 
-    background-color: rgb(51, 51, 51);
+    background-color: #272727;
     padding-top: 90px;
     padding-bottom: 90px;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 150px;
+    padding-right: 150px;
     font-family: typograph-light;
+}
+
+.book_button{
+    text-indent: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #4cb667;
+    width: 80px;
+    height: 40px;
+    display: none;
+    margin-top: 20px;
+    font-family: montserrat-light;
 }
 
 #book h1{
     font-size: 30px;
-    font-weight: bold;
+    font-family: montserrat-regular;
 }
 
 #book p{
     font-size: 25px;
     margin-top: 50px;
     line-height: 50px;
+}
+
+.book_bonus_text{
+    font-size: 25px;
+    line-height: 50px;
+
 }
 
 .languages{
@@ -229,6 +327,7 @@ body{
 }
 
 .creation_container{
+    position: relative;
     height: 250px;
     width: 480px;
     background-color: red;
@@ -418,6 +517,32 @@ footer{
     background-color: rgb(68, 68, 68);
 }
 
+.opac{
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+}
+
+.opac_text{
+    position: absolute;
+    bottom: 0;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    font-family: montserrat-regular;
+}
+
+.opac_text div:nth-child(1){
+    font-size: 25pt;
+}
+
+.hidden{
+    display: none;
+}
+
 
 @media only screen and (max-width:716px) {
 
@@ -477,9 +602,18 @@ footer{
 
 @media screen and (max-width:680px){
 
-    #book p {
+    #book p, .book_bonus_text {
         font-size: 18px;
+        line-height: 40px;
     }
+
+    #book{
+        padding-left: 80px;
+        padding-right: 80px;
+        line-height: 30px;
+    }
+
+
 
 }
 
@@ -495,7 +629,44 @@ footer{
 
 }
 
+@media screen and (max-width:1268px){
+    .competence_separator:nth-last-child(2){
+        display: none;
+    }
+
+    .competence_container:nth-child(3){
+        margin-right: 0;
+    }
+
+    .competence_container:nth-last-child(1){
+        margin-top: 50px;
+        margin-left: 0;
+    }
+
+}
+
+@media screen and (max-width:1020px){
+    .competence_separator:nth-child(2){
+        display: none;
+    }
+
+    .competence_container{
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .competence_container:nth-child(3){
+        margin-top: 50px;
+    }
+
+}
+
 @media screen and (max-width:990px){
+
+    #portfolio{
+        padding-bottom: 0;
+        padding-top: 10px;
+    }
 
     .creation_container:nth-child(2n){
         margin-right: 10px;
@@ -509,6 +680,19 @@ footer{
         font-size: 35px;
     }
 
+}
+
+@media screen and (max-width:730px){
+    .book_bonus_text{
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+
+    .book_button{
+        display:flex;
+    }
 }
 
 @media screen and (max-width:520px){
